@@ -1,0 +1,100 @@
+/* Mengatur gaya dasar untuk seluruh body */
+body {
+    font-family: Arial, sans-serif; /* Mengatur jenis huruf */
+    background-color: #f4f4f4; /* Mengatur warna latar belakang */
+    text-align: center; /* Mengatur teks agar berada di tengah */
+    margin: 0; /* Menghapus margin default */
+    padding: 0; /* Menghapus padding default */
+}
+
+/* Kontainer utama untuk menampung sidebar dan game */
+.container {
+    display: flex; /* Menggunakan flexbox untuk menampilkan elemen secara berdampingan */
+}
+
+/* Gaya untuk sidebar */
+.sidebar {
+    background-color: #e9ecef; /* Mengatur warna latar belakang sidebar */
+    width: 250px; /* Menetapkan lebar sidebar */
+    padding: 20px; /* Menambahkan padding di dalam sidebar */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan untuk efek kedalaman */
+    margin-right: 20px; /* Menambahkan jarak antara sidebar dan kontainer game */
+}
+
+/* Gaya untuk kontainer permainan */
+.game-container {
+    background-color: white; /* Mengatur warna latar belakang kontainer permainan */
+    width: 400px; /* Menetapkan lebar kontainer permainan */
+    padding: 20px; /* Menambahkan padding di dalam kontainer */
+    margin: 100px auto; /* Mengatur margin atas/bawah dan tengah secara horizontal */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan untuk efek kedalaman */
+}
+
+/* Gaya untuk judul */
+h1 {
+    color: #333; /* Mengatur warna teks judul */
+}
+
+/* Gaya untuk menampilkan level dan skor */
+.score-level {
+    display: flex; /* Menggunakan flexbox untuk menampilkan elemen secara berdampingan */
+    justify-content: space-between; /* Menjajarkan elemen ke kiri dan kanan */
+    margin-bottom: 20px; /* Menambahkan jarak bawah */
+}
+
+/* Gaya untuk teks level dan skor */
+.score-level p {
+    font-size: 18px; /* Menetapkan ukuran font */
+    color: #333; /* Mengatur warna teks */
+}
+
+/* Gaya untuk pertanyaan */
+.question-container p {
+    font-size: 22px; /* Menetapkan ukuran font untuk pertanyaan */
+    margin-bottom: 10px; /* Menambahkan jarak bawah */
+}
+
+/* Gaya untuk input jawaban */
+#answer {
+    padding: 10px; /* Menambahkan padding di dalam input */
+    width: 80%; /* Menetapkan lebar input */
+    margin-bottom: 10px; /* Menambahkan jarak bawah */
+    font-size: 16px; /* Menetapkan ukuran font di dalam input */
+}
+
+/* Gaya untuk tombol */
+button {
+    padding: 10px 20px; /* Menambahkan padding atas/bawah dan kiri/kanan */
+    background-color: #28a745; /* Mengatur warna latar belakang tombol */
+    color: white; /* Mengatur warna teks tombol */
+    border: none; /* Menghapus border default */
+    cursor: pointer; /* Mengubah kursor saat mengarahkan ke tombol */
+    font-size: 16px; /* Menetapkan ukuran font tombol */
+}
+
+/* Gaya saat tombol di-hover */
+button:hover {
+    background-color: #218838; /* Mengubah warna latar belakang saat tombol di-hover */
+}
+
+/* Gaya untuk umpan balik */
+#feedback {
+    margin-top: 20px; /* Menambahkan jarak atas */
+    font-size: 18px; /* Menetapkan ukuran font untuk umpan balik */
+    color: #ff0000; /* Mengatur warna teks umpan balik */
+}
+
+/* Gaya untuk menampilkan timer */
+#timer {
+    font-size: 24px; /* Menetapkan ukuran font untuk timer */
+    color: #333; /* Mengatur warna teks untuk timer */
+    margin-top: 10px; /* Menambahkan jarak atas */
+}
+
+/* Gaya untuk dropdown menu (tipe soal) */
+#questionType {
+    padding: 10px; /* Menambahkan padding di dalam dropdown */
+    font-size: 16px; /* Menetapkan ukuran font untuk dropdown */
+    width: 100%; /* Menetapkan lebar dropdown */
+    margin-bottom: 10px; /* Menambahkan jarak bawah */
+}

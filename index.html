@@ -1,0 +1,46 @@
+<!DOCTYPE html> <!-- Deklarasi tipe dokumen untuk menunjukkan bahwa ini adalah dokumen HTML5. -->
+<html lang="en"> <!-- Elemen root yang mengindikasikan bahwa bahasa dokumen ini adalah bahasa Inggris. -->
+<head>
+    <meta charset="UTF-8"> <!-- Menentukan set karakter dokumen, menggunakan UTF-8 agar mendukung berbagai karakter internasional. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mengatur tampilan agar responsif di berbagai perangkat, terutama di perangkat mobile. -->
+    <title>Game Kuis Matematika</title> <!-- Judul yang ditampilkan di tab browser. -->
+    <link rel="stylesheet" href="style.css"> <!-- Menghubungkan file CSS eksternal yang mengatur gaya halaman web. -->
+</head>
+<body>
+    <h1>  Informasi Pembuat </h1>
+    <h2> Nama: Muhammad Anaska Fahrezi </h2>
+    <h3> NIM: 2255201005 </h3>
+    
+    <div class="game-container"> <!-- Kontainer utama untuk elemen-elemen dalam game -->
+        <h1>Game Kuis Matematika</h1> <!-- Judul game yang akan tampil di halaman. -->
+        
+        <div class="score-level"> <!-- Bagian untuk menampilkan level, skor, dan waktu -->
+            <p>Level: <span id="level">1</span></p> <!-- Menampilkan level saat ini dalam game. -->
+            <p>Skor: <span id="score">0</span></p> <!-- Menampilkan skor saat ini. -->
+            <p>Waktu: <span id="timer">30</span> detik</p> <!-- Menampilkan sisa waktu permainan. -->
+        </div>
+        
+        <div class="question-container"> <!-- Bagian untuk menampilkan pertanyaan kuis -->
+            <p id="question">Berapa hasil dari 1 + 1?</p> <!-- Pertanyaan default saat game dimulai. -->
+            <input type="number" id="answer" placeholder="Masukkan jawaban" /> <!-- Input untuk memasukkan jawaban pengguna. -->
+            <button onclick="checkAnswer()">Submit Jawaban</button> <!-- Tombol untuk mengirim jawaban pengguna. -->
+            <button onclick="resetGame()">Reset Game</button> <!-- Tombol untuk mereset permainan. -->
+        </div>
+        
+        <div id="feedback"></div> <!-- Menampilkan umpan balik atas jawaban yang diberikan oleh pengguna. -->
+        
+        <div class="question-type"> <!-- Pilihan jenis pertanyaan yang dapat dipilih oleh pengguna. -->
+            <label for="questionType">Pilih Tipe Soal:</label>
+            <select id="questionType"> <!-- Dropdown untuk memilih jenis operasi matematika. -->
+                <option value="addition">Penjumlahan</option>
+                <option value="subtraction">Pengurangan</option>
+                <option value="multiplication">Perkalian</option>
+            </select>
+        </div>
+        
+        <div id="highscore">Skor Tertinggi: <span id="highscoreValue">0</span></div> <!-- Menampilkan skor tertinggi yang dicapai oleh pengguna. -->
+    </div>
+    
+    <script src="script.js"></script> <!-- Menghubungkan file JavaScript eksternal yang berisi logika permainan. -->
+</body>
+</html>
